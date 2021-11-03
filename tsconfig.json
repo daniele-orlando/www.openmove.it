@@ -1,0 +1,12 @@
+{
+    "extends": "./node_modules/@eviljs/tsconfig/vite.json",
+    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "@/*": ["./*"],
+        },
+        "sourceMap": true,
+        "types": ["vite/client"],
+    },
+}

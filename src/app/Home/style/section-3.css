@@ -1,0 +1,31 @@
+.Section3-c5df {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: var(--section-gutter);
+    margin-bottom: var(--section-gutter);
+    background-color: var(--std-color-bg1);
+}
+
+.Section3-c5df.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-b340 {
+    flex: 1 0 0;
+    display: inline-block;
+    padding: var(--std-gutter-xl);
+}
+
+.picture-5bc9 {
+    flex: 1 0 0;
+    width: 20rem;
+    height: 30rem;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.Section3-c5df.reverse .picture-5bc9 {
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+}

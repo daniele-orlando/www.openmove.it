@@ -1,0 +1,30 @@
+.quote-98a3 {
+    position: relative;
+    padding: var(--view-gutter);
+    font-size: var(--std-text-h5-size);
+    /* font-size: min(var(--std-text-h5-size), 3vw); */
+    font-weight: var(--std-weight-light);
+}
+.quote-98a3::before,
+.quote-98a3::after {
+    position: absolute;
+    font-size: var(--std-text-h1-size);
+    color: var(--std-color-primary-accent);
+}
+.quote-98a3::before {
+    content: '“';
+    top: 0;
+    left: 0;
+}
+/*
+.quote-98a3::after {
+    content: '„';
+    right: 0;
+    bottom: 0;
+}
+*/
+
+.quote-98a3 em {
+    font-style: unset;
+    font-weight: var(--std-weight-medium);
+}

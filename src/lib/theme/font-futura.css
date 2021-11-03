@@ -1,0 +1,54 @@
+:root,
+.std-theme {
+    --std-font-primary: 'std-font-primary', Futura, Roboto, Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'std-font-primary';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('./font-futura/1_light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'std-font-primary';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./font-futura/2_regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'std-font-primary';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./font-futura/3_medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'std-font-primary';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./font-futura/4_demi_bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'std-font-primary';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./font-futura/5_heavy.otf') format('opentype');
+}
+@font-face {
+    font-family: 'std-font-primary';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('./font-futura/6_bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'std-font-primary';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('./font-futura/7_extra_bold.otf') format('opentype');
+}

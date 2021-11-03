@@ -1,0 +1,15 @@
+.shape-d93a {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: hsl(0deg 0% 100% / 1);
+    transition: all var(--std-duration-slow);
+}
+
+.shape-d93a.hero {
+    clip-path: polygon(0% 0%, 15% 0%, 0% 100%, 0% 100%);
+}
+
+.shape-d93a.end {
+    clip-path: polygon(100% 0%, 100% 100%, 90% 100%, 100% 0%);
+}

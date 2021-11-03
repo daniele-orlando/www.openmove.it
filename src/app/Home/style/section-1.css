@@ -1,0 +1,32 @@
+.Section1-3411 {
+    position: relative;
+    display: grid;
+    grid-template-areas: '. c .';
+    grid-template-columns: 3fr max-content 1fr;
+    align-items: center;
+    height: 80vh;
+    max-height: 50rem;
+    isolation: isolate;
+}
+
+.poster-9d4d {
+    z-index: -2;
+    opacity: .6;
+}
+.poster-9d4d.std-media-cover {
+    object-position: 0% 20%;
+}
+
+.overlay-af10 {
+    z-index: -1;
+}
+@media (max-width: 1299px) {
+    .overlay-af10 {
+        background-color: hsl(0deg 0% 100% / .6);
+    }
+}
+
+.content-de9f {
+    grid-area: c;
+    padding: var(--view-gutter);
+}

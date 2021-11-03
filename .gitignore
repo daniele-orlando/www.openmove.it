@@ -2,7 +2,7 @@
 .netlify
 .vscode
 *.code-workspace
-/build/
 /private/
 node_modules
+package-lock.json
 tsconfig.tsbuildinfo

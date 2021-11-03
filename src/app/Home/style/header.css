@@ -1,0 +1,21 @@
+.header-21c0 {
+    display: flex;
+    align-items: center;
+    padding: var(--view-gutter);
+}
+
+.menu-9f49 {
+    flex-grow: 1;
+    text-transform: uppercase;
+}
+
+.item-15c0 {
+    margin-right: 2rem;
+    font-size: var(--std-text-subtitle2-size);
+    font-weight: var(--std-weight-medium);
+}
+
+.logo-b6c4 {
+    width: auto;
+    height: 3rem
+}
