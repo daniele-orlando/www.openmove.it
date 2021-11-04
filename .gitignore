@@ -1,8 +1,0 @@
-.DS_Store
-.netlify
-.vscode
-*.code-workspace
-/build/
-/private/
-node_modules
-tsconfig.tsbuildinfo
