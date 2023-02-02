@@ -1,0 +1,30 @@
+.view-gutter {
+    padding: var(--view-gutter);
+}
+
+.view-gutter-sides {
+    padding-left: var(--view-gutter);
+    padding-right: var(--view-gutter);
+}
+
+.page-section {
+    width: 100%;
+    min-height: 100vh;
+}
+@media (max-width: 599px) {
+    .page-section {
+        min-height: unset;
+    }
+}
+
+.page-viewport {
+    max-width: var(--std-viewport-l);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--view-gutter);
+    padding-right: var(--view-gutter);
+}
+.page-viewport.wide {
+    width: 100%;
+    max-width: var(--std-viewport-xl);
+}

@@ -1,0 +1,11 @@
+{
+    "extends": "./node_modules/@eviljs/tsconfig/solid.json",
+    "include": ["src/**/*.ts", "src/**/*.tsx"],
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "~/*": ["./*"],
+        },
+        "tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo",
+    },
+}

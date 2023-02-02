@@ -1,0 +1,3 @@
+In landing il logo è in alto e il menu di nav è nascosto, con un’animazione
+appena la pagina carica il logo scende al centro e il menu compare al suo
+posto.

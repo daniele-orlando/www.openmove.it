@@ -1,6 +1,7 @@
 /.netlify/
 /.pnpm-debug.log
 /*.code-workspace
+/build/
 /node_modules/
 /pnpm-lock.yaml
 /private/

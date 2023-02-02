@@ -1,0 +1,38 @@
+query Data {
+    movies {
+        key
+        it {
+            handle
+            mimeType
+            url
+        }
+        en {
+            handle
+            mimeType
+            url
+        }
+    }
+    pictures {
+        key
+        it {
+            handle
+            mimeType
+            url
+        }
+        en {
+            handle
+            mimeType
+            url
+        }
+    }
+    texts {
+        key
+        it
+        en
+    }
+    textsMarkdown {
+        key
+        it
+        en
+    }
+}

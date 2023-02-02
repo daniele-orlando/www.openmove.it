@@ -1,0 +1,71 @@
+.HeroSection-26c1 {
+    --poster-width: calc(100% - var(--view-gutter));
+}
+@media (width <= 599px) {
+    .HeroSection-26c1 {
+        --poster-width: 100%;
+    }
+}
+
+.display-632f {
+    max-width: var(--poster-width);
+    margin: auto;
+    padding: var(--view-gutter);
+}
+@media (width <= 599px) {
+    .display-632f {
+        max-width: unset;
+    }
+}
+
+.title-3d20 {
+    font-size: max(8vw, var(--std-text-display1-size));
+    /* color: white; */
+    /* color: oldlace; */
+    color: cornsilk;
+    /* color: slategray; */
+    /* color: darkblue; */
+    /* color: darkslateblue; */
+    /* color: slateblue; */
+    /* color: darkmagenta; */
+    /* color: rosybrown; */
+    /* color: rebeccapurple; */
+    /* color: purple; */
+    /* color: darkred; */
+    /* mix-blend-mode: overlay; */
+    /* mix-blend-mode: difference; */
+    /* mix-blend-mode: screen; */
+}
+/*
+.title-3d20 > *:nth-child(3) {
+    margin-left: 0vw;
+}
+*/
+
+.poster-e885 {
+    z-index: -1;
+    animation-name: poster-a2bb;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+    animation-delay: 1s;
+    overflow: hidden;
+    margin: auto;
+    max-width: var(--poster-width);
+}
+.poster-e885::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: .4;
+    background: black;
+}
+
+@keyframes poster-a2bb {
+    0%{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(40px 0%, 100% 0%, calc(100% - 40px) 100%, 0% 100%);
+    }
+}

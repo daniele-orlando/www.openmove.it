@@ -1,0 +1,70 @@
+.std-button {
+    --button-radius: 0;
+    padding: var(--button-padding, var(--std-gutter2) var(--std-gutter3));
+}
+
+.std-button.with-icon {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Vapor & Arrow Theme ********************************************************/
+
+.std-button.vapor,
+.std-button.vapor::before,
+.std-button.arrow,
+.std-button.arrow::before {
+    transition: all var(--std-duration2);
+}
+
+.std-button.vapor,
+.std-button.arrow {
+    position: relative;
+    isolation: isolate;
+    font-weight: var(--std-text-weight2);
+}
+
+.std-button.vapor::before,
+.std-button.arrow::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border: 4px solid var(--button-accent, var(--std-color-primary-accent));
+    border-radius: var(--std-radius1);
+    transform: skewX(-10deg);
+}
+
+/* Vapor Theme ****************************************************************/
+
+.std-button.vapor {
+    color: var(--button-accent, var(--std-color-primary-accent));
+}
+
+.std-button.vapor:hover,
+.std-button.vapor:focus,
+.std-button.vapor:active {
+    color: white;
+}
+
+.std-button.vapor:hover::before,
+.std-button.vapor:focus::before,
+.std-button.vapor:active::before {
+    background-color: var(--button-accent, var(--std-color-primary-accent));
+}
+
+/* Train Theme ****************************************************************/
+
+.std-button.arrow {
+    color: white;
+}
+.std-button.arrow::before {
+    background-color: var(--button-accent, var(--std-color-primary-accent));
+}
+.std-button.arrow:hover::before,
+.std-button.arrow:focus::before,
+.std-button.arrow:active::before {
+    border-color: var(--button-accent--selected, var(--std-color-primary-shade2));
+}

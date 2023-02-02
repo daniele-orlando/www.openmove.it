@@ -1,0 +1,49 @@
+a:not([href]) {
+    cursor: default;
+}
+
+.std.theme-light {
+    --brand-link-color: hsl(233deg 77% 58%);
+}
+.std.theme-dark {
+    --brand-link-color: hsl(233deg 100% 70%);;
+}
+
+.brand-link {
+    --brand-link-corner-size: var(--std-radius1);
+    position: relative;
+    isolation: isolate;
+    border-bottom: 1px dotted var(--brand-link-color);
+    padding: 0 .2em;
+    font-weight: var(--std-text-weight);
+    color: var(--brand-link-color);
+    text-decoration: none;
+    transition: all var(--std-duration3);
+}
+.brand-link:hover,
+.brand-link:focus,
+.brand-link:active {
+    color: white;
+    border-bottom-color: transparent;
+}
+
+.brand-link::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transition: all var(--std-duration3);
+    clip-path: polygon(
+        var(--brand-link-corner-size) 0%,
+        100% 0%,
+        100% calc(100% - var(--brand-link-corner-size)),
+        calc(100% - var(--brand-link-corner-size)) 100%,
+        0% 100%,
+        0% var(--brand-link-corner-size)
+    );
+}
+.brand-link:hover::after,
+.brand-link:focus::after,
+.brand-link:active::after {
+    background: var(--brand-link-color);
+}

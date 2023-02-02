@@ -1,0 +1,62 @@
+diff --git a/types/jsx.d.ts b/types/jsx.d.ts
+index 97047492e9ab5f09022106e93e0bf9b2dd334009..14986fdaac3ebe5e17f63a1638f84ae34802293e 100644
+--- a/types/jsx.d.ts
++++ b/types/jsx.d.ts
+@@ -776,23 +776,23 @@ export namespace JSX {
+     referrerPolicy?: HTMLReferrerPolicy;
+   }
+   interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
+-    alt?: string;
+-    crossorigin?: HTMLCrossorigin;
+-    decoding?: "sync" | "async" | "auto";
+-    height?: number | string;
+-    ismap?: boolean;
+-    isMap?: boolean;
+-    loading?: "eager" | "lazy";
+-    referrerpolicy?: HTMLReferrerPolicy;
+-    referrerPolicy?: HTMLReferrerPolicy;
+-    sizes?: string;
+-    src?: string;
+-    srcset?: string;
+-    srcSet?: string;
+-    usemap?: string;
+-    useMap?: string;
+-    width?: number | string;
+-    crossOrigin?: HTMLCrossorigin;
++    alt?: undefined | string;
++    crossorigin?: undefined | HTMLCrossorigin;
++    decoding?: undefined | "sync" | "async" | "auto";
++    height?: undefined | number | string;
++    ismap?: undefined | boolean;
++    isMap?: undefined | boolean;
++    loading?: undefined | "eager" | "lazy";
++    referrerpolicy?: undefined | HTMLReferrerPolicy;
++    referrerPolicy?: undefined | HTMLReferrerPolicy;
++    sizes?: undefined | string;
++    src?: undefined | string;
++    srcset?: undefined | string;
++    srcSet?: undefined | string;
++    usemap?: undefined | string;
++    useMap?: undefined | string;
++    width?: undefined | number | string;
++    crossOrigin?: undefined | HTMLCrossorigin;
+   }
+   interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
+     accept?: string;
+@@ -978,11 +978,11 @@ export namespace JSX {
+     name?: string;
+   }
+   interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
+-    media?: string;
+-    sizes?: string;
+-    src?: string;
+-    srcset?: string;
+-    type?: string;
++    media?: undefined | string;
++    sizes?: undefined | string;
++    src?: undefined | string;
++    srcset?: undefined | string;
++    type?: undefined | string;
+   }
+   interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
+     media?: string;

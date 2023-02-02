@@ -1,0 +1,57 @@
+@import './std.css';
+
+@import './button.css';
+@import './expendable.css';
+@import './font.css';
+@import './layout.css';
+@import './link.css';
+@import './other.css';
+@import './shape.css';
+
+.std {
+    --std-color-primary-h: 0deg;
+    --std-color-primary-s: 59%;
+    --std-color-primary-l: 41%;
+    /* --std-color-secondary-h: 217deg; */
+    /* --std-color-secondary-s: 52%; */
+    /* --std-color-secondary-l: 21%; */
+
+    --std-text-descender-size: .25;
+    --std-text-descender-line: .8;
+
+    --view-layer-body: 0;
+    --view-layer-modal: calc(var(--view-layer-body) + 1);
+
+    --theme-light-fg: hsl(0deg 100% 16%);
+    --theme-dark-fg: hsl(0deg 0% 100%);
+}
+
+.std.theme-light {
+    --theme-fg: var(--theme-light-fg);
+    --theme-bg: var(--std-color-bg1);
+}
+.std.theme-dark {
+    --theme-fg: var(--theme-dark-fg);
+    --theme-bg: hsl(0deg 0% 14%);
+}
+
+/* Scales *********************************************************************/
+
+.std {
+    --std-text-size-base: max(11px, .8vmin);
+    --std-text-size-factor: .15vmin;
+
+    --std-icon-base: max(11px, .8vmin);
+    --std-icon-factor: .15vmin;
+
+    --std-gutter-base: max(4px, .5vmin);
+    --std-gutter-factor: .5vmin;
+
+    --std-radius-base: max(4px, .5vmin);;
+    --std-radius-factor: 1vmin;
+
+    /* --std-text-space-base: 0em; */
+    /* --std-text-space-factor: .04vmin; */
+
+    --view-gutter: max(20px, var(--std-gutter5));
+}

@@ -1,0 +1,21 @@
+@media (max-width: 899px), (max-height: 899px) {
+    .hide-on-screen-m {
+        display: none;
+    }
+}
+@media (max-width: 599px), (max-height: 599px) {
+    .hide-on-screen-s {
+        display: none;
+    }
+}
+
+@media (max-width: 899px) {
+    .hide-on-screen-width-m {
+        display: none;
+    }
+}
+@media (max-width: 599px) {
+    .hide-on-screen-width-s {
+        display: none;
+    }
+}

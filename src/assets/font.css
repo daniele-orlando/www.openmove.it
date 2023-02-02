@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Sharp Sans No1';
+    font-style: normal;
+    font-weight: 200;
+    font-display: block;
+    src:
+        url('./font/1_light.woff2') format('woff2'),
+        url('./font/1_light.woff') format('woff')
+    ;
+}
+
+@font-face {
+    font-family: 'Sharp Sans No1';
+    font-style: normal;
+    font-weight: 300;
+    font-display: block;
+    src:
+        url('./font/1_light.woff2') format('woff2'),
+        url('./font/1_light.woff') format('woff')
+    ;
+}
+
+@font-face {
+    font-family: 'Sharp Sans No1';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src:
+        url('./font/2_regular.woff2') format('woff2'),
+        url('./font/2_regular.woff') format('woff')
+    ;
+}
+
+@font-face {
+    font-family: 'Sharp Sans No1';
+    font-style: normal;
+    font-weight: 500;
+    font-display: block;
+    src:
+        url('./font/3_medium.woff2') format('woff2'),
+        url('./font/3_medium.woff') format('woff')
+    ;
+}
+
+@font-face {
+    font-family: 'Sharp Sans No1';
+    font-style: normal;
+    font-weight: 600;
+    font-display: block;
+    src:
+        url('./font/4_semi_bold.woff2') format('woff2'),
+        url('./font/4_semi_bold.woff') format('woff')
+    ;
+}
+
+@font-face {
+    font-family: 'Sharp Sans No1';
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+    src:
+        url('./font/4_semi_bold.woff2') format('woff2'),
+        url('./font/4_semi_bold.woff') format('woff')
+    ;
+}
+
+@font-face {
+    font-family: 'Sharp Sans No1';
+    font-style: normal;
+    font-weight: 800;
+    font-display: block;
+    src:
+        url('./font/4_semi_bold.woff2') format('woff2'),
+        url('./font/4_semi_bold.woff') format('woff')
+    ;
+}

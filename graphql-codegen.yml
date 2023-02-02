@@ -1,0 +1,10 @@
+schema: https://eu-central-1.cdn.hygraph.com/content/ckneqtfjob1zk01w76bcw8p0h/master
+documents:
+    - ./src/**/*.gql
+generates:
+    ./src/graphql.d.ts:
+        plugins:
+            - typescript
+            - typescript-operations
+        config:
+            fetcher: fetch

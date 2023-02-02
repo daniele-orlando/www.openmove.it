@@ -1,0 +1,11 @@
+.brand-shape {
+    --brand-shape: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: var(--brand-shape);
+}
+.brand-shape.outside {
+    shape-outside: var(--brand-shape);
+}
+.brand-shape.radius {
+    border-radius: var(--std-radius4);
+    overflow: hidden;
+}
