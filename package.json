@@ -23,14 +23,14 @@
         "@eviljs/std": "1.2.5",
         "@eviljs/web": "1.2.1",
         "@eviljs/webx": "1.1.0",
-        "solid-app-router": "0.4.2",
+        "@solidjs/router": "0.7.0",
         "solid-js": "1.6.10"
     },
     "devDependencies": {
         "@eviljs/tsconfig": "1.1.1",
-        "@graphql-codegen/cli": "2.16.5",
-        "@graphql-codegen/typescript": "2.8.8",
-        "@graphql-codegen/typescript-operations": "2.5.13",
+        "@graphql-codegen/cli": "3.0.0",
+        "@graphql-codegen/typescript": "3.0.0",
+        "@graphql-codegen/typescript-operations": "3.0.0",
         "@types/node": "18.11.18",
         "csstype": "3.1.1",
         "graphql": "16.6.0",

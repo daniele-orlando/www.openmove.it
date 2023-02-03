@@ -1,21 +1,5 @@
-.HeroSection-26c1 {
-    --poster-width: calc(100% - var(--view-gutter));
-}
-@media (width <= 599px) {
-    .HeroSection-26c1 {
-        --poster-width: 100%;
-    }
-}
-
 .display-632f {
-    max-width: var(--poster-width);
-    margin: auto;
     padding: var(--view-gutter);
-}
-@media (width <= 599px) {
-    .display-632f {
-        max-width: unset;
-    }
 }
 
 .title-3d20 {
@@ -49,9 +33,6 @@
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
     animation-delay: 1s;
-    overflow: hidden;
-    margin: auto;
-    max-width: var(--poster-width);
 }
 .poster-e885::after {
     content: '';
@@ -63,9 +44,9 @@
 
 @keyframes poster-a2bb {
     0%{
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0vw 0%, 100% 0%, 100% 40%, calc(100% - 0vw) 100%, 0% 100%, 0% 60%);
     }
     100% {
-        clip-path: polygon(40px 0%, 100% 0%, calc(100% - 40px) 100%, 0% 100%);
+        clip-path: polygon(2vw 0%, 100% 0%, 100% 40%, calc(100% - 2vw) 100%, 0% 100%, 0% 60%);
     }
 }

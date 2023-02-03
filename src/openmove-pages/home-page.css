@@ -99,7 +99,6 @@
     position: relative;
     padding-top: var(--view-gutter);
     padding-bottom: var(--view-gutter);
-    color: var(--theme-light-fg);
 }
 
 .layout-4e56::after {
@@ -110,8 +109,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: hsl(0deg 40% 97%);
+    background: hsl(var(--std-color-secondary-h) 37% var(--background-l));
     transform: skew(6deg, 4deg);
+}
+.std.theme-light .layout-4e56 {
+    --background-l: calc(var(--std-bg-l) + 15% * var(--std-bg-ll));
+}
+.std.theme-dark .layout-4e56 {
+    --background-l: calc(var(--std-bg-l) + 15% * var(--std-bg-ll));
 }
 @media (width < 1600px) {
     .layout-4e56::after {
@@ -148,7 +153,7 @@
 }
 .picture-a3a4.raised {
     padding: var(--std-gutter3);
-    background: var(--theme-bg);
+    background: var(--std-color-bg1);
     box-shadow: var(--std-shadow18);
 }
 
@@ -258,7 +263,7 @@
     flex-wrap: wrap;
     gap: var(--std-gutter4);
     justify-content: center;
-    background-color: var(--std-color-bg3);
+    background: var(--std-color-bg1);
 }
 
 .Section-c5df.reverse {

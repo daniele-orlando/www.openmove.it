@@ -10,11 +10,7 @@
 
 .std {
     --std-color-primary-h: 0deg;
-    --std-color-primary-s: 59%;
-    --std-color-primary-l: 41%;
-    /* --std-color-secondary-h: 217deg; */
-    /* --std-color-secondary-s: 52%; */
-    /* --std-color-secondary-l: 21%; */
+    --std-color-secondary-h: 33deg;
 
     --std-text-descender-size: .25;
     --std-text-descender-line: .8;
@@ -23,16 +19,26 @@
     --view-layer-modal: calc(var(--view-layer-body) + 1);
 
     --theme-light-fg: hsl(0deg 100% 16%);
-    --theme-dark-fg: hsl(0deg 0% 100%);
+    --theme-dark-fg: hsl(0deg 20% 92%);
 }
 
 .std.theme-light {
+    --std-color-primary-s: 59%;
+    --std-color-primary-l: 41%;
+    --std-color-secondary-s: 60%;
+    --std-color-secondary-l: 50%;
+
     --theme-fg: var(--theme-light-fg);
-    --theme-bg: var(--std-color-bg1);
+    --theme-bg: hsl(0deg 0% 98%);
 }
 .std.theme-dark {
+    --std-color-primary-s: 59%;
+    --std-color-primary-l: 41%;
+    --std-color-secondary-s: 100%;
+    --std-color-secondary-l: 70%;
+
     --theme-fg: var(--theme-dark-fg);
-    --theme-bg: hsl(0deg 0% 14%);
+    --theme-bg: hsl(0deg 0% 10%);
 }
 
 /* Scales *********************************************************************/

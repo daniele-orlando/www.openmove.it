@@ -2,21 +2,14 @@ a:not([href]) {
     cursor: default;
 }
 
-.std.theme-light {
-    --brand-link-color: hsl(233deg 77% 58%);
-}
-.std.theme-dark {
-    --brand-link-color: hsl(233deg 100% 70%);;
-}
-
 .brand-link {
     --brand-link-corner-size: var(--std-radius1);
     position: relative;
     isolation: isolate;
-    border-bottom: 1px dotted var(--brand-link-color);
+    border-bottom: 1px dotted var(--brand-link-color, var(--std-color-secondary-accent));
     padding: 0 .2em;
     font-weight: var(--std-text-weight);
-    color: var(--brand-link-color);
+    color: var(--brand-link-color, var(--std-color-secondary-accent));
     text-decoration: none;
     transition: all var(--std-duration3);
 }
@@ -45,5 +38,5 @@ a:not([href]) {
 .brand-link:hover::after,
 .brand-link:focus::after,
 .brand-link:active::after {
-    background: var(--brand-link-color);
+    background: var(--brand-link-color, var(--std-color-secondary-accent));
 }

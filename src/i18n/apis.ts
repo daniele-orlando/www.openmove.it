@@ -3,7 +3,7 @@ import it from '~/messages/it'
 import en from '~/messages/en'
 
 export const I18nDefaultLocale = 'it'
-export const I18nDefaultFallbackLocale = 'en'
+export const I18nDefaultFallbackLocale = 'it'
 export const I18nDefaultMessages = {it, en}
 
 export const I18nSpec = defineI18n({
